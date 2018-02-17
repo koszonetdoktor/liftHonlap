@@ -42,7 +42,15 @@ h2 {
 p {
   font-size: 16px;
   line-height: 1.5;
-  margin-bottom: 20px; }
+  margin-bottom: 0px; 
+}
+.jobPosition {
+  color: rgb(198, 0, 36);
+}
+
+.contactNames {
+  margin-bottom: 20px;
+}
 
 .bg-primary {
   background-color: rgb(198, 0, 36) !important; }
@@ -159,7 +167,10 @@ header.masthead {
   text-align: center;
   color: rgb(198, 0, 36);
   /* background: rgb(156, 153, 153); */
-  background: url("../img/portfolio/fullsize/1.jpg") }
+  background-image: url("../img/header_bg.jpg");
+  background-repeat:no-repeat;
+  background-size:cover;
+ }
   header.masthead img {
     display: block;
     margin: 0 auto 20px; }

@@ -14,18 +14,18 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: rgb(198, 0, 36); }
+  border-color: rgb(207, 32, 45); }
 
 hr.light {
   border-color: white; }
 
 a {
-  color: rgb(198, 0, 36);
+  color: rgb(207, 32, 45);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s; }
   a:focus, a:hover {
-    color: rgb(198, 0, 36); }
+    color: rgb(207, 32, 45); }
 
 h1,
 h2,
@@ -36,7 +36,7 @@ h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 h2 {
-  color:  rgb(198, 0, 36);
+  color:  rgb(207, 32, 45);
 }
 
 p {
@@ -45,7 +45,7 @@ p {
   margin-bottom: 0px; 
 }
 .jobPosition {
-  color: rgb(198, 0, 36);
+  color: rgb(207, 32, 45);
 }
 
 .contactNames {
@@ -53,11 +53,11 @@ p {
 }
 
 .bg-primary {
-  background-color: rgb(198, 0, 36) !important; }
+  background-color: rgb(207, 32, 45) !important; }
 
 .bg-dark {
   color: white;
-  background-color: rgb(95, 96, 97) !important; }
+  background-color: rgb(67, 68, 69) !important; }
 
 .text-faded {
   color: rgba(255, 255, 255, 0.7); }
@@ -94,7 +94,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     border: none;
-    background: rgb(198, 0, 36); }
+    background: rgb(207, 32, 45); }
     #mainNav a:focus {
       outline: none; }
     #mainNav .navbar-brand {
@@ -107,7 +107,7 @@ body {
       #mainNav .navbar-nav li.nav-item a.nav-link {
         color: white; }
         #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-          color: rgb(95, 96, 97);
+          color: rgb(67, 68, 69) ;
           outline: none; }
         #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
           color: white; }
@@ -119,8 +119,8 @@ body {
       border-color: white; }
       #mainNav .navbar-toggler:focus, #mainNav .navbar-toggler:hover {
         color: white;
-        border-color: rgb(95, 96, 97);
-        background-color: rgb(95, 96, 97); }
+        border-color: rgb(67, 68, 69) ;
+        background-color: rgb(67, 68, 69) ; }
 
   @media (min-width: 992px) {
     #mainNav {
@@ -151,7 +151,7 @@ body {
           #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
             color: white;
             border-radius: 3px;
-            background: rgb(95, 96, 97); }
+            background: rgb(67, 68, 69) ; }
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
         #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
           color: white; }
@@ -165,7 +165,7 @@ header.masthead {
   padding-top: 100px;
   padding-bottom: 50px;
   text-align: center;
-  color: rgb(198, 0, 36);
+  color: rgb(207, 32, 45);
   /* background: rgb(156, 153, 153); */
   background-image: url("../img/header_bg.jpg");
   background-repeat:no-repeat;
@@ -252,7 +252,7 @@ header.masthead {
     margin: 0 auto 20px; }
 
 .text-primary {
-  color: rgb(95, 96, 97) !important; }
+  color: rgb(67, 68, 69)  !important; }
 
 .no-gutter > [class*='col-'] {
   padding-right: 0;

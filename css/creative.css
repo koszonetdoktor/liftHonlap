@@ -52,6 +52,10 @@ p {
   margin-bottom: 20px;
 }
 
+.address-field {
+  margin-bottom: 20px;
+}
+
 .bg-primary {
   background-color: rgb(207, 32, 45) !important; }
 

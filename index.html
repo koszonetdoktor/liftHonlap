@@ -313,11 +313,11 @@
             name="contact"
             method="POST"
             data-netlify="true"
-            action="/success"
+            action="/success.html"
           >
             <p>
               <label class="notes_label shortInput">Név</label>
-              <input required class="contact_input" type="text" name="name" />
+              <input required class="contact_input" type="text" name="nev" />
             </p>
             <p>
               <label class="notes_label shortInput">Email cím</label>
@@ -325,7 +325,7 @@
             </p>
             <p>
               <label class="notes_label">Üzenet</label>
-              <textarea required class="notes" name="message"></textarea>
+              <textarea required class="notes" name="uzenet"></textarea>
             </p>
             <p>
               <button type="submit">Küldés</button>
@@ -393,5 +393,15 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/creative.min.js"></script>
+    <script>
+      console.log("hello");
+      function logSubmit(event) {
+        event.preventDefault();
+        console.log(`Form Submitted! Time stamp: ${event.timeStamp}`);
+      }
+
+      const form = document.getElementById("form");
+      form.addEventListener("submit", logSubmit);
+    </script>
   </body>
 </html>

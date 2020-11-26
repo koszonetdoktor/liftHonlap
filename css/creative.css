@@ -560,3 +560,27 @@ fieldset[disabled] .btn-primary:hover {
     padding: 0;
   }
 }
+
+.myButton {
+  cursor: pointer;
+}
+
+#form_container {
+  padding-top: 2rem;
+}
+
+#form_container h3 {
+  color: rgb(207, 32, 45);
+  margin: auto;
+}
+
+#message_container {
+  padding-bottom: 5rem;
+  display: none;
+}
+
+#message_container h2 {
+  color: rgb(207, 32, 45);
+  margin: auto;
+  padding-bottom: 1rem;
+}

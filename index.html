@@ -307,31 +307,6 @@
             <hr class="primary" />
           </div>
         </div>
-        <div class="row form_container">
-          <form
-            class="form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            action="/success.html"
-          >
-            <p>
-              <label class="notes_label shortInput">Név</label>
-              <input required class="contact_input" type="text" name="nev" />
-            </p>
-            <p>
-              <label class="notes_label shortInput">Email cím</label>
-              <input required class="contact_input" type="email" name="email" />
-            </p>
-            <p>
-              <label class="notes_label">Üzenet</label>
-              <textarea required class="notes" name="uzenet"></textarea>
-            </p>
-            <p>
-              <button type="submit">Küldés</button>
-            </p>
-          </form>
-        </div>
         <div class="row">
           <div class="col-lg-6 text-center">
             <i class="fa fa-phone fa-3x sr-contact"></i>
@@ -362,7 +337,7 @@
             <div class="address-field">
               <i class="fa fa-envelope-o fa-3x sr-contact"></i>
               <p>
-                <a href="mailto:your-email@your-domain.com"
+                <a href="mailto:edukidliftbt@gmail.com"
                   >edukidliftbt@gmail.com</a
                 >
               </p>
@@ -372,12 +347,45 @@
                 class="fa fa-map-marker fa-3x sr-contact"
                 aria-hidden="true"
               ></i>
-              <p>
-                2360 Gyál Erdőalja utca 24.
-              </p>
+              <p>2360 Gyál Erdőalja utca 24.</p>
             </div>
           </div>
         </div>
+        <div class="row form_container" id="form_container">
+          <div class="col-lg-8 mx-auto text-center">
+            <h3 class="section-heading">Kérdése van?</h2>
+            <hr class="primary" />
+          </div>
+          <form
+            id="myForm"
+            class="form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
+            <p>
+              <label class="notes_label shortInput">Név</label>
+              <input required class="contact_input" type="text" name="nev" />
+            </p>
+            <p>
+              <label class="notes_label shortInput">Email cím</label>
+              <input required class="contact_input" type="email" name="email" />
+            </p>
+            <p>
+              <label class="notes_label">Üzenet</label>
+              <textarea required class="notes" name="uzenet"></textarea>
+            </p>
+            <p>
+              <button class="myButton" type="submit">Küldés</button>
+            </p>
+          </form>
+        </div>
+            <div id="message_container">
+              <h2>Köszönjük üzenetét!</h2>
+              <p>
+                Hamarosan válaszolunk!
+              </p>
+            </div>
       </div>
     </section>
 
@@ -395,12 +403,15 @@
     <script src="js/creative.min.js"></script>
     <script>
       console.log("hello");
+      const form = document.getElementById("myForm");
+      const thankyou = document.getElementById("message_container")
       function logSubmit(event) {
         event.preventDefault();
         console.log(`Form Submitted! Time stamp: ${event.timeStamp}`);
+        form.style = "display:none;"
+        thankyou.style = "display:block;"
       }
 
-      const form = document.getElementById("form");
       form.addEventListener("submit", logSubmit);
     </script>
   </body>

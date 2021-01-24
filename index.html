@@ -407,9 +407,20 @@
       const thankyou = document.getElementById("message_container")
       function logSubmit(event) {
         event.preventDefault();
-        console.log(`Form Submitted! Time stamp: ${event.timeStamp}`);
-        form.style = "display:none;"
-        thankyou.style = "display:block;"
+        let formData = new FormData(form)
+        fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString()
+        }).then(() => {
+          console.log(`Form Submitted! Time stamp: ${event.timeStamp}`)
+          form.style = "display:none;"
+          thankyou.style = "display:block;"
+        })
+        .catch((err) => {
+          console.error(err)
+          alert("Nem lehetett végrehajtania műveletet. Próbálja meg késöbb.")
+        })
       }
 
       form.addEventListener("submit", logSubmit);

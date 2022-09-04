@@ -5795,7 +5795,7 @@ gatsby-parcel-config@0.13.0:
     "@parcel/transformer-raw" "2.6.2"
     "@parcel/transformer-react-refresh-wrap" "2.6.2"
 
-gatsby-plugin-image@^2.15.0:
+gatsby-plugin-image@^2.22.0:
   version "2.22.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-image/-/gatsby-plugin-image-2.22.0.tgz#9208ad4eb0cf462adc802f2ec713cb09996633d1"
   integrity sha512-39XbPtUv/rtB/PffkTiEYjGGAFkqivWHGLil1aqiDo42RhPhhgHQ5Y2mn9B3ZiK86foUhSjQMRX6XSgTw2CGDA==
@@ -6020,7 +6020,7 @@ gatsby-worker@^1.22.0:
     "@babel/core" "^7.15.5"
     "@babel/runtime" "^7.15.4"
 
-gatsby@^4.15.1:
+gatsby@^4.22.0:
   version "4.22.0"
   resolved "https://registry.yarnpkg.com/gatsby/-/gatsby-4.22.0.tgz#45abc807f209f1be1872d2c6c86f7f76b4a61c33"
   integrity sha512-tpssrpJX0vn27oolu72XaDyXpqLPsAh7EjebeOVOlegEq6ZwHg6b+XjhQoLFujt3ogXHza+vNhSuMQ6NFLzzMA==

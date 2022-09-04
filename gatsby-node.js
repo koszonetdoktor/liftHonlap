@@ -112,7 +112,7 @@ exports.createSchemaCustomization = async ({ actions }) => {
     interface HomepageImage implements Node {
       id: ID!
       alt: String
-      gatsbyImageData: JSON @imagePassthroughArgs
+      gatsbyImageData: GatsbyImageData @imagePassthroughArgs
       url: String
     }
 
